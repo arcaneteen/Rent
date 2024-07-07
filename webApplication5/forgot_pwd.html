@@ -1,0 +1,40 @@
+<html lang="en">
+    <head><script src="./java Scripts/isValidEmail().js"> 
+        function capcha()
+        {
+            alert("no")
+            var ch=['A','B','C','D','E','F','1','2','3','8','9']
+            var result=''
+            for(var i=0;i<5;i++)
+            {
+                result+=ch[Math.floor(Math.random()*11)]
+            }
+            document.getElementById("txt9").valueL=result
+            alert(result)
+        }
+    </script>
+	<link rel="stylesheet" href="./style.css">
+    </head>
+	
+    <body>
+        <div id="forgot-form" class="forpwd">
+            <div class="frgt-box">
+                <div class="forgot-box">
+                    <label>Reset Password</label>
+                    <form id="frgt" class="input-group-forgot">
+                        <input type="password" class="frgt-fld" placeholder="Enter New Password">
+                        <input type="password" class="frgt-fld" placeholder="Enter Confirm Password">
+                        <input type="text" class="frgt-fld" placeholder="Email Id" onblur="isVAlidEmail()">
+                        <input type="text" id="otp" class="frgt-fld" placeholder="Enter OTP(sent via email)">
+                        <input type="text" id="txtinput" class="frgt-fld" placeholder="Enter the captcha">   
+                        <div class="contain">
+                            <input type="text" id="capt" readonly="readonly">
+                            <div id="refresh"><img src="./img/refresh.jpeg" width="45px" onclick="capcha()"></div>     
+                        </div>
+                        <button type="submit" class="frgt-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>      
+    </body>
+</html>

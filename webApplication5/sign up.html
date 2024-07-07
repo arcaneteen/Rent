@@ -1,0 +1,29 @@
+<html lang="en">
+    <head><script src="./java Scripts/isValidEmail().js">
+    </script>
+    <script src="./java Scripts/mobile no.js">
+    </script>
+    <script src="./java Scripts/Checkbox.js">
+    </script>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="logup">
+            <div id="signup-form" class="signup-page">
+                <div class="signup-box">
+                    <div class="register-box">
+                        <label>Sign up</label>
+                        <form id="register" class="input-group-register">
+                            <input type="text" class="output-fld" id="email_id" placeholder="Email Id" onblur="isValidEmail();">
+                            <input type="text" class="output-fld" placeholder="First Name">
+                            <input type="text" class="output-fld" placeholder="Last Name">
+                            <input type="number" class="output-fld" id="mobile_no" placeholder="Enter phn no" onblur="mobile()">
+                            <input type="password" class="output-fld" placeholder="Enter Password">
+                            <input type="password" class="output-fld" placeholder="Confirm Password">
+                            <input type="checkbox" id="mycheck" class="output-fid"> Accept our Terms&Conditions
+                            <button type="submit" class="sign-btn" id="text" onclick="myfunction()">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
